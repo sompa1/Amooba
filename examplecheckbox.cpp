@@ -18,7 +18,7 @@ void ExampleCheckBox::draw() const
     gout << move_to(_x+2, _y+2) << color(0,0,0) << box(_size_x-4, _size_y-4);
     if (state==0)
     {
-        gout  << color(0,255,0);
+        gout  << color(0,102,0);
         gout << move_to(_x+4, _y+4) << line(_size_x-8, _size_y-8);
         gout << move_to(_x+5, _y+4) << line(_size_x-8, _size_y-8);
         gout << move_to(_x+_size_x-4, _y+4) << line(-_size_x+8, _size_y-8);

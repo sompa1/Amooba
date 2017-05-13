@@ -15,22 +15,19 @@ PushButton::PushButton(Window * parent, int x, int y, int sx, int sy, string s, 
 void PushButton::draw() const {
    if (state==0)
    {
-    gout << move_to(_x, _y) << box(_size_x, _size_y)
-         << color(255,255,255);
-    gout << move_to(_x+_size_x/2-gout.twidth(_felirat)/2, _y+20) << color(0,255,0)
+    gout << move_to(_x, _y) << color(240,230,140) << box(_size_x, _size_y);
+    gout << move_to(_x+_size_x/2-gout.twidth(_felirat)/2, _y+20) << color(0,102,0)
          << text(_felirat);
    }
    else if (state==1)
    {
-       gout << move_to(_x, _y) << box(_size_x, _size_y)
-         << color(255,255,255);
+       gout << move_to(_x, _y) << color(240,230,140) << box(_size_x, _size_y);
     gout << move_to(_x+_size_x/2-gout.twidth(_felirat)/2, _y+20) << color(255,0,0)
          << text(_felirat);
    }
    else
    {
-       gout << move_to(_x, _y) << box(_size_x, _size_y)
-         << color(255,255,255);
+       gout << move_to(_x, _y) <<color(240,230,140)<< box(_size_x, _size_y);
     gout << move_to(_x+_size_x/2-gout.twidth(_felirat)/2, _y+20) << color(255,255,255)
          << text(_felirat);
    }

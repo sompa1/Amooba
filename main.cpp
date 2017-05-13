@@ -66,7 +66,7 @@ public:
             }
             if (sCount==5)
             {
-                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -84,7 +84,7 @@ public:
             }
             if (sCount==5)
             {
-               widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
+               widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -106,7 +106,7 @@ public:
             }
              if (sCount==5)
             {
-               widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
+               widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -128,7 +128,7 @@ public:
             }
              if (sCount==5)
             {
-                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -150,7 +150,7 @@ public:
             }
              if (sCount==5)
             {
-                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -172,7 +172,7 @@ public:
             }
              if (sCount==5)
             {
-                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -192,7 +192,7 @@ public:
 
          if (dontetlen)
             {
-                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", -1));
+                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Döntetlen", "winButton", -1));
                 return;
             }
     }
