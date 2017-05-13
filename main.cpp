@@ -49,6 +49,7 @@ public:
 
     void ellenoriz(int x, int y, int s)
     {
+
         board[x][y]=s;
         int sCount=0;
 
@@ -175,6 +176,25 @@ public:
                 return;
             }
         }
+
+        bool dontetlen=true;
+        // döntetlen
+        for (int i=0; i<boardSize; i++)
+        {
+            for (int j=0; j<boardSize; j++)
+            {
+                if (board[i][j]==-1)
+                {
+                    dontetlen=false;
+                }
+            }
+        }
+
+         if (dontetlen)
+            {
+                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", -1));
+                return;
+            }
     }
 };
 
