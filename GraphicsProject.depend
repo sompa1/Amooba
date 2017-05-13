@@ -80,14 +80,14 @@
 1493826666 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\window.cpp
 	"window.hpp"
 
-1494709179 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\pushbutton.cpp
+1494710153 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\pushbutton.cpp
 	"pushbutton.hpp"
 
 1494707668 c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\pushbutton.hpp
 	"widgets.hpp"
 	"window.hpp"
 
-1493759530 c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\widgets.hpp
+1494711165 c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\widgets.hpp
 	"graphics.hpp"
 
 1488748903 c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\include\graphics.hpp
@@ -113,14 +113,14 @@
 	<string>
 	"widgets.hpp"
 
-1493759530 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\widgets.cpp
+1494711109 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\widgets.cpp
 	"widgets.hpp"
 	"graphics.hpp"
 
-1493826666 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\window.cpp
+1494711165 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\window.cpp
 	"window.hpp"
 
-1494707717 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\examplecheckbox.cpp
+1494710121 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\examplecheckbox.cpp
 	"examplecheckbox.hpp"
 	"graphics.hpp"
 	"window.hpp"

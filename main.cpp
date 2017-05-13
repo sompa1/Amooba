@@ -54,7 +54,7 @@ public:
         int sCount=0;
 
         // sorok ellenõrzése
-        for (int i=0; i<=7; i++)
+        for (int i=0; i<=boardSize-5; i++)
         {
             sCount = 0;
             for (int j=i; j<=i+4; j++)
@@ -66,13 +66,17 @@ public:
             }
             if (sCount==5)
             {
+                for (int i=0; i<widgets.size(); i++)
+                {
+                    widgets[i]->disable();
+                }
                 widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
         }
 
         // oszlopok ellenõrzése
-        for (int i=0; i<=7; i++)
+        for (int i=0; i<=boardSize-5; i++)
         {
             sCount = 0;
             for (int j=i; j<=i+4; j++)
@@ -84,6 +88,10 @@ public:
             }
             if (sCount==5)
             {
+                for (int i=0; i<widgets.size(); i++)
+                {
+                    widgets[i]->disable();
+                }
                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
@@ -106,6 +114,10 @@ public:
             }
              if (sCount==5)
             {
+                for (int i=0; i<widgets.size(); i++)
+                {
+                    widgets[i]->disable();
+                }
                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
@@ -128,6 +140,10 @@ public:
             }
              if (sCount==5)
             {
+                for (int i=0; i<widgets.size(); i++)
+                {
+                    widgets[i]->disable();
+                }
                 widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
@@ -150,6 +166,10 @@ public:
             }
              if (sCount==5)
             {
+                for (int i=0; i<widgets.size(); i++)
+                {
+                    widgets[i]->disable();
+                }
                 widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
@@ -172,6 +192,10 @@ public:
             }
              if (sCount==5)
             {
+                for (int i=0; i<widgets.size(); i++)
+                {
+                    widgets[i]->disable();
+                }
                 widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
                 return;
             }
@@ -192,6 +216,10 @@ public:
 
          if (dontetlen)
             {
+                for (int i=0; i<widgets.size(); i++)
+                {
+                    widgets[i]->disable();
+                }
                 widgets.push_back(new PushButton(this, 300, 300, 55,25, "Döntetlen", "winButton", -1));
                 return;
             }

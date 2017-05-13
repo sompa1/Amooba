@@ -25,7 +25,8 @@ void Window::event_loop() {
             }
         }
         if (focus!=-1) {
-            widgets[focus]->handle(ev);
+            if (widgets[focus]->isEnabled())
+                widgets[focus]->handle(ev);
         }
         for (size_t i=0;i<widgets.size();i++) {
             widgets[i]->draw();

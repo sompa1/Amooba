@@ -9,6 +9,7 @@ Widget::Widget(int x, int y, int sx, int sy)
     _size_x = sx;
     _size_y=sy;
     _focused=false;
+    enabled=true;
 }
 
 bool Widget::is_selected(int mouse_x, int mouse_y) const
@@ -28,6 +29,21 @@ void Widget::focus() {
 
 void Widget::unfocus() {
     _focused = false;
+}
+
+void Widget::enable()
+{
+    enabled=true;
+}
+
+void Widget::disable()
+{
+    enabled=false;
+}
+
+bool Widget::isEnabled()
+{
+    return enabled;
 }
 
 
