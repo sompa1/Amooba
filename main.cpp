@@ -19,24 +19,28 @@ public:
 //    TextEditor *ed1;
 //    PushButton *button;
 //    PushButton *button1;
-    ExampleCheckBox *bcbox;
-    ExampleCheckBox *bcbox2;
-    ExampleCheckBox *bcbox3;
-    MyWindow() {
+    MyWindow()
+    {
 //        button = new PushButton(this, 10, 10, 100, 40,"=", "egyenlo");
 //         button1 = new PushButton(this, 10, 60, 100, 40,"Start", "start");
 //       tx1 = new StaticText(175,20,100,40,"pipa");
 //        ed1 = new TextEditor(10,110,100,40,"editor");
-        bcbox = new ExampleCheckBox(10,160,20,20);
-        bcbox2 = new ExampleCheckBox(50,160,20,20);
-        bcbox3 = new ExampleCheckBox(90,160,20,20);
 //        widgets.push_back(tx1);
 //        widgets.push_back(ed1);
 //        widgets.push_back(button);
 //        widgets.push_back(button1);
-		widgets.push_back(bcbox);
-		widgets.push_back(bcbox2);
-		widgets.push_back(bcbox3);
+        int posx=40;
+        int posy=40;
+		for (int i=1; i<=12; i++)
+        {
+            for (int j=1; j<=12; j++)
+            {
+                widgets.push_back(new ExampleCheckBox(posx,posy,40,40));
+                posx=posx+40;
+            }
+            posy=posy+40;
+            posx=40;
+        }
    }
     void esemeny(string mitortent)
     { //esemenykezelo fgv.
@@ -60,7 +64,7 @@ public:
 
 int main()
 {
-    gout.open(400,400);
+    gout.open(800,600);
     MyWindow *mywindow = new MyWindow;
     mywindow->event_loop();
     return 0;
