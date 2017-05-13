@@ -15,39 +15,46 @@ using namespace genv;
 ///////////////////////////////////////////////////
 class MyWindow : public Window {
 public:
-    StaticText *tx1;
-    TextEditor *ed1;
-    PushButton *button;
-    PushButton *button1;
+//    StaticText *tx1;
+//    TextEditor *ed1;
+//    PushButton *button;
+//    PushButton *button1;
     ExampleCheckBox *bcbox;
+    ExampleCheckBox *bcbox2;
+    ExampleCheckBox *bcbox3;
     MyWindow() {
-        button = new PushButton(this, 10, 10, 100, 40,"=", "egyenlo");
-         button1 = new PushButton(this, 10, 60, 100, 40,"Start", "start");
-       tx1 = new StaticText(175,20,100,40,"pipa");
-        ed1 = new TextEditor(10,110,100,40,"editor");
+//        button = new PushButton(this, 10, 10, 100, 40,"=", "egyenlo");
+//         button1 = new PushButton(this, 10, 60, 100, 40,"Start", "start");
+//       tx1 = new StaticText(175,20,100,40,"pipa");
+//        ed1 = new TextEditor(10,110,100,40,"editor");
         bcbox = new ExampleCheckBox(10,160,20,20);
-        widgets.push_back(tx1);
-        widgets.push_back(ed1);
-        widgets.push_back(button);
-        widgets.push_back(button1);
+        bcbox2 = new ExampleCheckBox(50,160,20,20);
+        bcbox3 = new ExampleCheckBox(90,160,20,20);
+//        widgets.push_back(tx1);
+//        widgets.push_back(ed1);
+//        widgets.push_back(button);
+//        widgets.push_back(button1);
 		widgets.push_back(bcbox);
+		widgets.push_back(bcbox2);
+		widgets.push_back(bcbox3);
    }
-    void esemeny(string mitortent) { //esemenykezelo fgv.
-        if (mitortent == "egyenlo") {
-            tx1->setText(ed1->value());
-            }
-        if (mitortent == "start") {
-            string ping_cmd;
-            if (!bcbox->is_checked())
-            {
-            ping_cmd = "ping -c 4 " + ed1->value();
-            }
-            else
-            {
-            ping_cmd = "ping " + ed1->value();
-           }
-            system(ping_cmd.c_str());
-        }
+    void esemeny(string mitortent)
+    { //esemenykezelo fgv.
+//        if (mitortent == "egyenlo") {
+//            tx1->setText(ed1->value());
+//            }
+//        if (mitortent == "start") {
+//            string ping_cmd;
+//            if (!bcbox->is_checked())
+//            {
+//            ping_cmd = "ping -c 4 " + ed1->value();
+//            }
+//            else
+//            {
+//            ping_cmd = "ping " + ed1->value();
+//           }
+//            system(ping_cmd.c_str());
+//        }
     }
 };
 
