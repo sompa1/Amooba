@@ -53,5 +53,5 @@ int ExampleCheckBox::getState() const
 }
 
 void ExampleCheckBox::action() {
-    _parent->esemeny(pX,pY,state);
+    _parent->ellenoriz(pX,pY,state);
 }

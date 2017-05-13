@@ -20,7 +20,13 @@ private:
 public:
     MyWindow()
     {
-        int posx=40;
+        createBoard();
+   }
+
+   void createBoard()
+   {
+       widgets.clear();
+       int posx=40;
         int posy=40;
 		for (int i=0; i<12; i++)
         {
@@ -34,7 +40,13 @@ public:
             posx=40;
         }
    }
-    void esemeny(int x, int y, int s)
+
+   void pushButtonCall()
+   {
+       createBoard();
+   }
+
+    void ellenoriz(int x, int y, int s)
     {
         board[x][y]=s;
         int sCount=0;
@@ -52,7 +64,7 @@ public:
             }
             if (sCount==5)
             {
-                std::cout<< "Nyertél";
+                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -70,7 +82,7 @@ public:
             }
             if (sCount==5)
             {
-                std::cout<< "Nyertél";
+               widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -92,7 +104,7 @@ public:
             }
              if (sCount==5)
             {
-                std::cout<< "Nyertél";
+               widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -114,7 +126,7 @@ public:
             }
              if (sCount==5)
             {
-                std::cout<< "Nyertél";
+                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -136,7 +148,7 @@ public:
             }
              if (sCount==5)
             {
-                std::cout<< "Nyertél";
+                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
                 return;
             }
         }
@@ -158,7 +170,7 @@ public:
             }
              if (sCount==5)
             {
-                std::cout<< "Nyertél";
+                widgets.push_back(new PushButton(this, 300, 300, 50,25, "Nyertél", "winButton", s));
                 return;
             }
         }

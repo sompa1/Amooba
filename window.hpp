@@ -9,8 +9,8 @@ class Window {
 protected:
     std::vector<Widget*> widgets;
 public:
-    virtual void esemeny(int i, int j, int state){}
-
+    virtual void ellenoriz(int i, int j, int state){}
+    virtual void pushButtonCall() {}
     void event_loop() ;
 };
 
