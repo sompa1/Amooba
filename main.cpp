@@ -11,12 +11,13 @@
 
 using namespace std;
 using namespace genv;
-
+const int boardSize=20;
+const int fieldSize=30;
 
 ///////////////////////////////////////////////////
 class MyWindow : public Window {
 private:
-    int board[12][12];
+    int board[boardSize][boardSize];
 public:
     MyWindow()
     {
@@ -26,18 +27,18 @@ public:
    void createBoard()
    {
        widgets.clear();
-       int posx=40;
-        int posy=40;
-		for (int i=0; i<12; i++)
+       int posx=0;
+        int posy=0;
+		for (int i=0; i<boardSize; i++)
         {
-            for (int j=0; j<12; j++)
+            for (int j=0; j<boardSize; j++)
             {
-                widgets.push_back(new ExampleCheckBox(this,posx,posy,40,40,i,j));
-                posx=posx+40;
+                widgets.push_back(new ExampleCheckBox(this,posx,posy,fieldSize,fieldSize,i,j));
+                posx=posx+fieldSize;
                 board[i][j]=-1;
             }
-            posy=posy+40;
-            posx=40;
+            posy=posy+fieldSize;
+            posx=0;
         }
    }
 
@@ -88,12 +89,12 @@ public:
         }
 
         // fõátló fölött
-        for (int i=0; i<12; i++)
+        for (int i=0; i<boardSize; i++)
         {
             sCount=0;
             int diagX=i;
             int diagY=0;
-            while (diagX>=0 && diagY<12)
+            while (diagX>=0 && diagY<boardSize)
             {
                 if (board[diagX][diagY]==s)
                 {
@@ -114,8 +115,8 @@ public:
         {
             sCount=0;
             int diagX=i;
-            int diagY=11;
-            while (diagX<12 && diagY>=0)
+            int diagY=boardSize-1;
+            while (diagX<boardSize && diagY>=0)
             {
                 if (board[diagX][diagY]==s)
                 {
@@ -132,11 +133,11 @@ public:
         }
 
         // mellékátló fölött
-        for (int i=0; i<=11; i++)
+        for (int i=0; i<=boardSize-1; i++)
         {
             sCount=0;
             int diagX=i;
-            int diagY=11;
+            int diagY=boardSize-1;
             while (diagX>=0 && diagY>=0)
             {
                 if (board[diagX][diagY]==s)
@@ -154,12 +155,12 @@ public:
         }
 
         // mellékátló alatt
-        for (int i=11; i>=0; i--)
+        for (int i=boardSize-1; i>=0; i--)
         {
             sCount=0;
             int diagX=i;
             int diagY=0;
-            while (diagX<12 && diagY<12)
+            while (diagX<boardSize && diagY<boardSize)
             {
                 if (board[diagX][diagY]==s)
                 {
