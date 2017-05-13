@@ -9,7 +9,7 @@ class Window {
 protected:
     std::vector<Widget*> widgets;
 public:
-    virtual void esemeny(std::string mitortent){}
+    virtual void esemeny(int i, int j, int state){}
 
     void event_loop() ;
 };

@@ -7,6 +7,7 @@
 #include "pushbutton.hpp"
 #include <vector>
 #include <stdlib.h>
+#include <iostream>
 
 using namespace std;
 using namespace genv;
@@ -14,51 +15,153 @@ using namespace genv;
 
 ///////////////////////////////////////////////////
 class MyWindow : public Window {
+private:
+    int board[12][12];
 public:
-//    StaticText *tx1;
-//    TextEditor *ed1;
-//    PushButton *button;
-//    PushButton *button1;
     MyWindow()
     {
-//        button = new PushButton(this, 10, 10, 100, 40,"=", "egyenlo");
-//         button1 = new PushButton(this, 10, 60, 100, 40,"Start", "start");
-//       tx1 = new StaticText(175,20,100,40,"pipa");
-//        ed1 = new TextEditor(10,110,100,40,"editor");
-//        widgets.push_back(tx1);
-//        widgets.push_back(ed1);
-//        widgets.push_back(button);
-//        widgets.push_back(button1);
         int posx=40;
         int posy=40;
-		for (int i=1; i<=12; i++)
+		for (int i=0; i<12; i++)
         {
-            for (int j=1; j<=12; j++)
+            for (int j=0; j<12; j++)
             {
-                widgets.push_back(new ExampleCheckBox(posx,posy,40,40));
+                widgets.push_back(new ExampleCheckBox(this,posx,posy,40,40,i,j));
                 posx=posx+40;
+                board[i][j]=-1;
             }
             posy=posy+40;
             posx=40;
         }
    }
-    void esemeny(string mitortent)
-    { //esemenykezelo fgv.
-//        if (mitortent == "egyenlo") {
-//            tx1->setText(ed1->value());
-//            }
-//        if (mitortent == "start") {
-//            string ping_cmd;
-//            if (!bcbox->is_checked())
-//            {
-//            ping_cmd = "ping -c 4 " + ed1->value();
-//            }
-//            else
-//            {
-//            ping_cmd = "ping " + ed1->value();
-//           }
-//            system(ping_cmd.c_str());
-//        }
+    void esemeny(int x, int y, int s)
+    {
+        board[x][y]=s;
+        int sCount=0;
+
+        // sorok ellenõrzése
+        for (int i=0; i<=7; i++)
+        {
+            sCount = 0;
+            for (int j=i; j<=i+4; j++)
+            {
+                if (board[x][j]==s)
+                {
+                    sCount ++;
+                }
+            }
+            if (sCount==5)
+            {
+                std::cout<< "Nyertél";
+                return;
+            }
+        }
+
+        // oszlopok ellenõrzése
+        for (int i=0; i<=7; i++)
+        {
+            sCount = 0;
+            for (int j=i; j<=i+4; j++)
+            {
+                if (board[j][y]==s)
+                {
+                    sCount ++;
+                }
+            }
+            if (sCount==5)
+            {
+                std::cout<< "Nyertél";
+                return;
+            }
+        }
+
+        // fõátló fölött
+        for (int i=0; i<12; i++)
+        {
+            sCount=0;
+            int diagX=i;
+            int diagY=0;
+            while (diagX>=0 && diagY<12)
+            {
+                if (board[diagX][diagY]==s)
+                {
+                    sCount++;
+                }
+                diagX--;
+                diagY++;
+            }
+             if (sCount==5)
+            {
+                std::cout<< "Nyertél";
+                return;
+            }
+        }
+
+        // fõátló alatt
+        for (int i=11; i>=0; i--)
+        {
+            sCount=0;
+            int diagX=i;
+            int diagY=11;
+            while (diagX<12 && diagY>=0)
+            {
+                if (board[diagX][diagY]==s)
+                {
+                    sCount++;
+                }
+                diagX++;
+                diagY--;
+            }
+             if (sCount==5)
+            {
+                std::cout<< "Nyertél";
+                return;
+            }
+        }
+
+        // mellékátló fölött
+        for (int i=0; i<=11; i++)
+        {
+            sCount=0;
+            int diagX=i;
+            int diagY=11;
+            while (diagX>=0 && diagY>=0)
+            {
+                if (board[diagX][diagY]==s)
+                {
+                    sCount++;
+                }
+                diagX--;
+                diagY--;
+            }
+             if (sCount==5)
+            {
+                std::cout<< "Nyertél";
+                return;
+            }
+        }
+
+        // mellékátló alatt
+        for (int i=11; i>=0; i--)
+        {
+            sCount=0;
+            int diagX=i;
+            int diagY=0;
+            while (diagX<12 && diagY<12)
+            {
+                if (board[diagX][diagY]==s)
+                {
+                    sCount++;
+                }
+                diagX++;
+                diagY++;
+            }
+             if (sCount==5)
+            {
+                std::cout<< "Nyertél";
+                return;
+            }
+        }
     }
 };
 

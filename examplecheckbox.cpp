@@ -1,11 +1,14 @@
 #include "examplecheckbox.hpp"
 #include "graphics.hpp"
+#include "window.hpp"
 using namespace genv;
 
-ExampleCheckBox::ExampleCheckBox(int x, int y, int sx, int sy)
-    : Widget(x,y,sx,sy)
+ExampleCheckBox::ExampleCheckBox(Window * parent,int x, int y, int sx, int sy, int i, int j)
+    : Widget(x,y,sx,sy), _parent(parent)
 {
     state=-1;
+    pX=i;
+    pY=j;
 }
 
 void ExampleCheckBox::draw() const
@@ -40,10 +43,15 @@ void ExampleCheckBox::handle(event ev)
         {
             state = round % 2;
             round++;
+            action();
         }
     }
 }
 int ExampleCheckBox::getState() const
 {
     return state;
+}
+
+void ExampleCheckBox::action() {
+    _parent->esemeny(pX,pY,state);
 }
