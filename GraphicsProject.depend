@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1488961547 source:c:\users\psoml\desktop\prog_i\kepmegnyito\hazikep\graphicsproject\main.cpp
+	"graphics.hpp"
+	<fstream>
+	<vector>
+	<cstdlib>
+	<cmath>
+	<iostream>
+
+1488745303 c:\users\psoml\desktop\prog_i\kepmegnyito\hazikep\graphicsproject\include\graphics.hpp
+	<string>
+
+1488988003 source:c:\users\psoml\desktop\bevprog2\kep\kep\graphicsproject\main.cpp
+	"graphics.hpp"
+	<fstream>
+	<vector>
+	<cstdlib>
+	<cmath>
+	<iostream>
+
+1488745303 c:\users\psoml\desktop\bevprog2\kep\kep\graphicsproject\include\graphics.hpp
+	<string>
+
+1493759530 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\examplecheckbox.cpp
+	"examplecheckbox.hpp"
+	"graphics.hpp"
+
+1493759530 c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\examplecheckbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1488748903 c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\include\graphics.hpp
+	<string>
+
+1493759530 c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\widgets.hpp
+	"graphics.hpp"
+
+1493827006 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"examplecheckbox.hpp"
+	"statictext.hpp"
+	"texteditor.hpp"
+	"window.hpp"
+	"pushbutton.hpp"
+	<vector>
+	<stdlib.h>
+
+1493759530 c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\statictext.hpp
+	<string>
+	"widgets.hpp"
+
+1493759530 c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\texteditor.hpp
+	<string>
+	"widgets.hpp"
+
+1493759530 c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\window.hpp
+	"widgets.hpp"
+	<vector>
+
+1493759530 c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\pushbutton.hpp
+	"widgets.hpp"
+	"window.hpp"
+
+1493827006 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\pushbutton.cpp
+	"pushbutton.hpp"
+
+1493759530 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\statictext.cpp
+	"statictext.hpp"
+	<string>
+
+1493759530 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\texteditor.cpp
+	"texteditor.hpp"
+	<string>
+
+1493759530 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1493826666 source:c:\users\psoml\desktop\bevprog2\10_oramenuwidg\10_ora\graphicsproject\window.cpp
+	"window.hpp"
+
