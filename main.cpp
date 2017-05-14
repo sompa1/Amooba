@@ -70,7 +70,11 @@ public:
                 {
                     widgets[i]->disable();
                 }
-                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 276, 303, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new StaticText(600, 300, 100,25, "A játék újrakezdéséhez"));
+                widgets.push_back(new StaticText(600, 325, 100,25, "nyomd meg a"));
+                widgets.push_back(new StaticText(600, 350, 100,25, "'nyertél' gombot"));
+
                 return;
             }
         }
@@ -92,7 +96,10 @@ public:
                 {
                     widgets[i]->disable();
                 }
-               widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
+               widgets.push_back(new PushButton(this, 276, 303, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new StaticText(600, 300, 100,25, "A játék újrakezdéséhez"));
+                widgets.push_back(new StaticText(600, 325, 100,25, "nyomd meg a"));
+                widgets.push_back(new StaticText(600, 350, 100,25, "'nyertél' gombot"));
                 return;
             }
         }
@@ -118,7 +125,10 @@ public:
                 {
                     widgets[i]->disable();
                 }
-               widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
+               widgets.push_back(new PushButton(this, 276, 303, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new StaticText(600, 300, 100,25, "A játék újrakezdéséhez"));
+                widgets.push_back(new StaticText(600, 325, 100,25, "nyomd meg a"));
+                widgets.push_back(new StaticText(600, 350, 100,25, "'nyertél' gombot"));
                 return;
             }
         }
@@ -144,7 +154,10 @@ public:
                 {
                     widgets[i]->disable();
                 }
-                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 276, 303, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new StaticText(600, 300, 100,25, "A játék újrakezdéséhez"));
+                widgets.push_back(new StaticText(600, 325, 100,25, "nyomd meg a"));
+                widgets.push_back(new StaticText(600, 350, 100,25, "'nyertél' gombot"));
                 return;
             }
         }
@@ -170,7 +183,10 @@ public:
                 {
                     widgets[i]->disable();
                 }
-                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 276, 303, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new StaticText(600, 300, 100,25, "A játék újrakezdéséhez"));
+                widgets.push_back(new StaticText(600, 325, 100,25, "nyomd meg a"));
+                widgets.push_back(new StaticText(600, 350, 100,25, "'nyertél' gombot"));
                 return;
             }
         }
@@ -196,7 +212,10 @@ public:
                 {
                     widgets[i]->disable();
                 }
-                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new PushButton(this, 276, 303, 55,25, "Nyertél", "winButton", s));
+                widgets.push_back(new StaticText(600, 300, 100,25, "A játék újrakezdéséhez"));
+                widgets.push_back(new StaticText(600, 325, 100,25, "nyomd meg a"));
+                widgets.push_back(new StaticText(600, 350, 100,25, "'nyertél' gombot"));
                 return;
             }
         }
@@ -220,7 +239,10 @@ public:
                 {
                     widgets[i]->disable();
                 }
-                widgets.push_back(new PushButton(this, 300, 300, 55,25, "Döntetlen", "winButton", -1));
+                widgets.push_back(new PushButton(this, 276, 303, 55,25, "Döntetlen", "winButton", -1));
+                widgets.push_back(new StaticText(600, 300, 100,25, "A játék újrakezdéséhez"));
+                widgets.push_back(new StaticText(600, 325, 100,25, "nyomd meg a"));
+                widgets.push_back(new StaticText(600, 350, 100,25, "'nyertél' gombot"));
                 return;
             }
     }

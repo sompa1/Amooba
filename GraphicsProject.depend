@@ -120,7 +120,7 @@
 1494711165 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\window.cpp
 	"window.hpp"
 
-1494710121 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\examplecheckbox.cpp
+1494753913 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\examplecheckbox.cpp
 	"examplecheckbox.hpp"
 	"graphics.hpp"
 	"window.hpp"
@@ -130,7 +130,7 @@
 	"widgets.hpp"
 	"window.hpp"
 
-1494711762 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\main.cpp
+1494756927 source:c:\users\psoml\desktop\bevprog2\bead3\sompa1beadando\amooba\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"examplecheckbox.hpp"
